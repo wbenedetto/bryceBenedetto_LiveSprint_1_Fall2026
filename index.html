@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Welcome to the Interactive Reveal What’s that Animal UI</h1>
+      <p class="header-subtitle">
+        Click on the buttons below to reveal the animal images
+      </p>
+    </header>
+
+    <main class="animal-grid">
+      <div class="animal-column">
+        <div class="animal-card-slot">
+          <div id="animal-card-cat" class="animal-card hidden">
+            <img src="tabby-cat.jpg" alt="Cat Image" class="animal-image" />
+            <button class="btn-hide" id="btn-hide-cat">Hide Result</button>
+          </div>
+        </div>
+        <button class="btn-reveal" type="button" id="btn-reveal-cat">
+          Reveal A CAT
+        </button>
+      </div>
+
+      <div class="animal-column">
+        <div class="animal-card-slot">
+          <div id="animal-card-dog" class="animal-card hidden">
+            <img src="dog.jpg" alt="Dog Image" class="animal-image" />
+            <button class="btn-hide" id="btn-hide-dog">Hide Result</button>
+          </div>
+        </div>
+        <button class="btn-reveal" type="button" id="btn-reveal-dog">
+          Reveal A DOG
+        </button>
+      </div>
+
+      <div class="animal-column">
+        <div class="animal-card-slot">
+          <div id="animal-card-cow" class="animal-card hidden">
+            <img src="cow.jpg" alt="Cow Image" class="animal-image" />
+            <button class="btn-hide" id="btn-hide-cow">Hide Result</button>
+          </div>
+        </div>
+        <button class="btn-reveal" type="button" id="btn-reveal-cow">
+          Reveal A COW
+        </button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
